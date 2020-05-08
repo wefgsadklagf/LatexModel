@@ -1,0 +1,30 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\contentsline {chapter}{\numberline {第一章\hspace {.3em}}简介}{1}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}二级标题}{1}{section.1.1}% 
+\contentsline {subsection}{\numberline {1.1.1}三级标题}{1}{subsection.1.1.1}% 
+\contentsline {subsubsection}{\numberline {1.1.1.1}四级标题}{1}{subsubsection.1.1.1.1}% 
+\contentsline {section}{\numberline {1.2}脚注}{1}{section.1.2}% 
+\contentsline {section}{\numberline {1.3}字体}{1}{section.1.3}% 
+\contentsline {chapter}{\numberline {第二章\hspace {.3em}}浮动体}{5}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}插图}{5}{section.2.1}% 
+\contentsline {subsection}{\numberline {2.1.1}单个图形}{5}{subsection.2.1.1}% 
+\contentsline {subsection}{\numberline {2.1.2}多个图形}{6}{subsection.2.1.2}% 
+\contentsline {section}{\numberline {2.2}表格}{7}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}基本表格}{7}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}复杂表格}{8}{subsection.2.2.2}% 
+\contentsline {section}{\numberline {2.3}算法环境}{10}{section.2.3}% 
+\contentsline {section}{\numberline {2.4}代码环境}{10}{section.2.4}% 
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}数学与引用文献的标注}{13}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}数学}{13}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}数字和单位}{13}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}数学符号和公式}{13}{subsection.3.1.2}% 
+\contentsline {subsection}{\numberline {3.1.3}定理环境}{14}{subsection.3.1.3}% 
+\contentsline {section}{\numberline {3.2}引用文献的标注}{15}{section.3.2}% 
+\contentsline {chapter}{全文总结}{17}{chapter*.18}% 
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}Maxwell Equations}{19}{appendix.A}% 
+\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}绘制流程图}{21}{appendix.B}% 
+\contentsline {chapter}{致\hskip 1em\relax 谢}{23}{appendix*.20}% 
+\contentsline {chapter}{攻读硕士学位期间已发表或录用的论文}{25}{appendix*.21}% 
+\contentsline {chapter}{攻读硕士学位期间参与的项目}{27}{appendix*.22}% 
+\contentsline {chapter}{攻读硕士学位期间申请的专利}{29}{appendix*.23}% 
+\contentsline {chapter}{简\hskip 1em\relax 历}{31}{appendix*.24}% 

@@ -1,0 +1,95 @@
+\documentclass[../document.tex]{subfiles}
+\begin{document}
+\section{我是一级标题}
+
+{\heiti 这一节重点介绍小标题、符号、代码的使用。}就像这个样子，就限定了字体的使用范围，如果要强调，就能够像我这个样子。如果想使用脚注就使用后垢面这个\footnote{我是脚注的内容}， 我还想再脚注中添加公式\footnote{
+比如放置一个条件概率公式,$P(X|Y)$
+$$P(X|Y) = \frac{P(XY)}{P(Y)}$$
+}
+
+\subsection{我是二级标题}
+这里能够写二级子目录的东西。
+这里能够写二级子目录的东西。
+这里能够写二级子目录的东西。
+这里能够写二级子目录的东西。
+这里能够写二级子目录的东西。
+
+\subsection{我是二级标题}
+\subsubsection{我是三级级标题}
+
+我是段落内容。
+我是段落内容。
+我是段落内容。
+我是段落内容。
+我是段落内容。
+我是段落内容。
+我是段落内容。
+我是段落内容。
+我是段落内容。
+我是段落内容。
+我是段落内容。
+我是段落内容。
+我是段落内容。
+我是段落内容。
+我是段落内容。
+
+\subsubsection{我是三级级标题}
+我是段落内容。
+我是段落内容。
+我是段落内容。
+我是段落内容。\\
+我是段落内容。
+我是段落内容。
+我是段落内容。
+我是段落内容。
+我是段落内容。
+我是段落内容。
+我是段落内容。
+我是段落内容。
+我是段落内容。
+
+我是段落内容。
+我是段落内容。
+我是段落内容。
+我是段落内容。
+我是段落内容。
+我是段落内容。
+
+\subsection{我是二级标题}
+这里将介绍怎么编写公式:
+
+我们能够简单的输入问本：
+\begin{equation}
+	P(XY) = P(Y|X) * P(X)
+	\label{eq:乘法公式} 
+\end{equation}
+使用$equation$这个就是输入公式的环境，就能输入独占一行的公式，使用\$ 包括只能输入，与文本在一行，\$\$ 也能独占，但是不编号。
+
+使用$ref$就能实现对公式的引用，将(\ref{eq:乘法公式})变换为条件概率公式，如下：
+$$P(Y|X) = \frac{P(XY)}{P(X)}$$
+
+这样就完成了公式的输入。其中frac输入公式的命令，在导航栏中就能找到所有的这样的命令，就能完成所有公式的输入了.如果问题还是蛮大就去看看别人的博客，进行公式入门就能够非常好的显示公式了。
+
+\subsection{我是二级标题}
+
+添加代码的时候就只需要按照下面的方式添加代码就好了：
+
+\begin{lstlisting}
+def viterbi(obs, states, start_p, trans_p, emit_p):
+	V = [{}] #tabular
+	path = {}
+	for y in states: #init
+		V[0][y] = start_p[y] * emit_p[y].get(obs[0],0)
+		path[y] = [y]
+	for t in range(1,len(obs)):
+		V.append({})
+		newpath = {}
+		for y in states:
+			(prob,state ) = max([(V[t-1][y0] * trans_p[y0].get(y,0) * emit_p[y].get(obs[t],0) ,y0) for y0 in states if V[t-1][y0]>0])
+			V[t][y] =prob
+			newpath[y] = path[state] + [y]
+		path = newpath
+	(prob, state) = max([(V[len(obs) - 1][y], y) for y in states])
+	return (prob, path[state])
+\end{lstlisting}
+\end{document}

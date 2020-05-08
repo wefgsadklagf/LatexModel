@@ -1,0 +1,94 @@
+%-*- coding=utf-8 -*-
+\documentclass[UTF8]{ctexart}
+\usepackage{geometry}
+\geometry{left=3.18cm,right=3.18cm,top=2.54cm,bottom=2.54cm}
+\usepackage{graphicx}
+\pagestyle{plain}  
+\usepackage{subfiles}
+\usepackage{setspace}
+\makeatletter
+% 下划线
+\newcommand\dlmu[2][4cm]{\hskip1pt\underline{\hb@xt@ #1{\hss#2\hss}}\hskip3pt}
+\makeatother
+% 修改小标题样式
+\usepackage{titlesec}
+\titleformat*{\section}{\LARGE}
+\titleformat*{\subsection}{\Large}
+\titleformat*{\subsubsection}{\Large}
+\titleformat*{\paragraph}{\large}
+\titleformat*{\subparagraph}{\large}
+\date{}
+% 代码专用包
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\setmonofont{Consolas}
+% 导入表格专用包
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{array}
+
+\lstset{
+	language = Python, 
+	numbers=left, 
+	numberstyle=\tiny,
+	keywordstyle=\color{blue!70},
+	commentstyle=\color{red!50!green!50!blue!50},
+	frame=shadowbox,
+	rulesepcolor=\color{red!20!green!20!blue!20},
+	basicstyle=\ttfamily,
+	breaklines,
+	columns=flexible
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 这里之后导入你需要的包，上面的的代码最好不修改 
+ 
+\begin{document}
+	\thispagestyle{empty}
+	\begin{center}
+		\quad \\
+		\quad \\
+		\heiti \fontsize{30}{17} 武\quad 汉\quad 纺\quad 织\quad 大\quad 学 \\
+		\vskip 1.0cm
+		\songti \fontsize{24}{12} 《 机器学习 》 课程报告 
+		\vskip 3.5cm
+		\heiti \zihao{2} 题目：\underline{\quad 基于朴素贝叶斯的邮件分类器\quad}
+	\end{center}
+	\vskip 3.5cm
+	
+	\begin{quotation}
+		\songti \fontsize{18}{18}
+		\doublespacing
+		\par\setlength\parindent{12em}
+		\quad 
+		
+		成\hspace{0.61cm}绩:\dlmu[3.5cm]{   }
+		
+		学\hspace{0.61cm}号:\dlmu[3.5cm]{ 1704210616 }
+		
+		姓\hspace{0.61cm}名:\dlmu[3.5cm]{ PEAK }
+		
+		班\hspace{0.61cm}级:\dlmu[3.5cm]{ 计科11700 }
+		
+		指导教师:\dlmu[3.5cm]{ XXXX }
+		
+		报告日期:\dlmu[3.5cm]{ 	2019年**月**日 }
+	\end{quotation}
+
+
+	\clearpage
+
+	\zihao{-4}
+	\kaishu
+	
+	% 注意下面是引用分文档的路径
+	% 每一个小结都写在分文档中，之后方便管理维护
+	% 写完之后导入就好了
+	\subfile{tex/abstract.tex}
+	\subfile{tex/chapter-1.tex}
+	\subfile{tex/chapter-2.tex}
+	\subfile{tex/chapter-3.tex}
+	\subfile{tex/chapter-4.tex}
+\end{document}
