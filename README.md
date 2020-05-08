@@ -9,6 +9,6 @@
 - ctex.pdf 参考
 
 ## 毕业论文模板
-- BUAAThesis-master
-- nju-thesis-master
-- SJTUThesis-master
+- BUAAThesis-master 北京航空航天大学学位论文LaTeX模板
+- nju-thesis-master 上海交通大学学位论文的XeLaTeX模板
+- SJTUThesis-master  南京大学学位论文的XeLaTeX模板
